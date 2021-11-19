@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "c85c89ab-b62a-4fcf-9574-ca6aaa8e1ee5",
+		"name": "Banking-ledger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List_Ledgers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/list?username=Lahiru",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"list"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Lahiru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List_transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/transactions?ledgerId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "ledgerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Send_Money",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/send?source=1&destination=2&amount=2.36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"send"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "1"
+						},
+						{
+							"key": "destination",
+							"value": "2"
+						},
+						{
+							"key": "amount",
+							"value": "2.36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit_Money",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/deposit?ledgerId=1&amount=2.36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "ledgerId",
+							"value": "1"
+						},
+						{
+							"key": "amount",
+							"value": "2.36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw_money",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/withdraw?ledgerId=1&amount=2.36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"withdraw"
+					],
+					"query": [
+						{
+							"key": "ledgerId",
+							"value": "1"
+						},
+						{
+							"key": "amount",
+							"value": "2.36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check_Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ledger/balance?ledgerId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ledger",
+						"balance"
+					],
+					"query": [
+						{
+							"key": "ledgerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
